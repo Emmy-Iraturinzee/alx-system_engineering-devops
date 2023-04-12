@@ -1,5 +1,6 @@
-# Configures server with holberton file
-file { '/tmp/holberton':
+# This Puppet manifest creates a file in /tmp
+
+file { 'holberton':
   ensure  => file,
   path    => '/tmp/holberton',
   mode    => '0744',
